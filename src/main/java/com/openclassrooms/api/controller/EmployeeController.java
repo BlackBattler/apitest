@@ -41,7 +41,7 @@ public class EmployeeController {
     }
 
     //Update an employee
-    @PutMapping
+    @PutMapping("/employee/{id}")
     public Employee updateEmployee(@PathVariable("id") final Long id, @RequestBody Employee employee) {
         Optional<Employee> e = employeeService.getEmployee(id);
         if(e.isPresent()) {
