@@ -34,7 +34,7 @@ public class EmployeeController {
         return employee.orElse(null);
     }
 
-    //Read all employee
+    //Read all employees
     @GetMapping("/employees")
     public Iterable<Employee> getEmployees() {
         return employeeService.getEmployees();
@@ -69,8 +69,7 @@ public class EmployeeController {
 
             employeeService.saveEmployee(currentEmployee);
             return currentEmployee;
-        }
-        else {
+        } else {
             return null;
         }
     }

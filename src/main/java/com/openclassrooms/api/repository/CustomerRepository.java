@@ -1,11 +1,11 @@
 package com.openclassrooms.api.repository;
 
-import com.openclassrooms.api.model.Employee;
+import com.openclassrooms.api.model.Customer;
 
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface EmployeeRepository extends CrudRepository<Employee, Long> {
+public interface CustomerRepository extends CrudRepository<Customer, Long> {
 
 }
